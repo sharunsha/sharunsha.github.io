@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sharun Satheesh - Data Analyst Portfolio showcasing SQL, Power BI, Python and Excel projects.">
+  <title>Sharun Satheesh | Data Analyst Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid #263247;
+      position: sticky;
+      top: 0;
+      background: #0b1120;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 18px;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      padding: 100px 0 85px;
+    }
+
+    .hero small {
+      color: #38bdf8;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 62px);
+      line-height: 1.15;
+      margin: 18px 0;
+    }
+
+    h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: #aab7ca;
+      font-size: 17px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      padding: 11px 20px;
+      border-radius: 6px;
+      background: #0284c7;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid #64748b;
+    }
+
+    section {
+      padding: 65px 0;
+      border-top: 1px solid #263247;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: #f8fafc;
+    }
+
+    .section-text {
+      color: #aab7ca;
+      max-width: 850px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #131e32;
+      border: 1px solid #263750;
+      border-radius: 10px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #aab7ca;
+      font-size: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    .tags {
+      margin-top: 12px;
+      color: #93c5fd;
+      font-size: 13px;
+    }
+
+    .experience {
+      border-left: 3px solid #0284c7;
+      padding-left: 22px;
+    }
+
+    .experience p, .education p {
+      color: #aab7ca;
+    }
+
+    .education {
+      margin-bottom: 22px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .contact-links a {
+      color: #38bdf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+      border-top: 1px solid #263247;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">SHARUN SATHEESH</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="container">
+    <div class="hero">
+      <small>DATA ANALYST PORTFOLIO</small>
+      <h1>Hi, I'm <span>Sharun Satheesh.</span></h1>
+      <p>
+        Aspiring Data Analyst skilled in SQL, Power BI, Python,
+        Advanced Excel and Tableau. I transform raw datasets into
+        meaningful insights through data analysis, reporting and
+        interactive dashboards.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="#projects">Explore My Projects</a>
+        <a class="btn secondary" href="mailto:sharunlucky@gmail.com">Contact Me</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="section-text">
+        I am an entry-level Data Analyst with internship experience
+        in SQL-driven analysis, MIS reporting and business intelligence.
+        My work includes data cleaning, exploratory data analysis,
+        database development, KPI reporting and dashboard creation.
+        I enjoy solving business problems by exploring data and
+        communicating clear analytical findings.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>SQL & Databases</h3>
+          <p>MySQL, Joins, CTEs, Subqueries, Window Functions, Data Validation</p>
+        </div>
+        <div class="card">
+          <h3>Power BI & Tableau</h3>
+          <p>DAX, Power Query, Data Modeling, Dashboard Design, KPI Development</p>
+        </div>
+        <div class="card">
+          <h3>Python</h3>
+          <p>Pandas, NumPy, Matplotlib, Seaborn, Data Cleaning, EDA</p>
+        </div>
+        <div class="card">
+          <h3>Advanced Excel</h3>
+          <p>PivotTables, XLOOKUP, INDEX-MATCH, SUMIFS, COUNTIFS, Slicers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects">
+
+        <div class="card">
+          <h3>Olist E-Commerce Data Analytics</h3>
+          <p>
+            End-to-end analysis of 99,441 Brazilian e-commerce orders
+            using Python, MySQL, Excel and Power BI. Includes data
+            validation, business analysis, reporting and dashboards.
+          </p>
+          <div class="tags">Python · SQL · MySQL · Excel · Power BI</div>
+          <a href="https://github.com/sharunsha/olist-ecommerce-data-analytics" target="_blank" rel="noopener noreferrer">View GitHub Project →</a>
+        </div>
+
+        <div class="card">
+          <h3>Zepto Product Analytics</h3>
+          <p>
+            Analyzed 3,700+ product records using MySQL and developed
+            an interactive Power BI dashboard for product, revenue,
+            discount and category analysis.
+          </p>
+          <div class="tags">SQL · MySQL · Power BI</div>
+        </div>
+
+        <div class="card">
+          <h3>Sales & Operations Reporting</h3>
+          <p>
+            Developed an Excel reporting dashboard using lookup
+            functions, conditional aggregations, PivotTables and
+            interactive slicers for 330+ client records.
+          </p>
+          <div class="tags">Advanced Excel · MIS Reporting</div>
+        </div>
+
+        <div class="card">
+          <h3>Healthcare Analytics</h3>
+          <p>
+            Performed exploratory data analysis and correlation
+            analysis on the Indian Liver Patient dataset using
+            Python and data visualization.
+          </p>
+          <div class="tags">Python · Pandas · Seaborn</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>Data Analyst Intern — Unified Mentor</h3>
+        <p>May 2024 – July 2024 | Remote</p>
+        <p>
+          Analyzed 5,000+ Amazon India sales records using SQL and Excel.
+          Examined product performance, revenue trends, pricing,
+          promotional patterns, payment preferences and return behavior.
+          Prepared structured KPI reports and business insights.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education">
+        <h3>B.Tech — Electrical & Electronics Engineering</h3>
+        <p>Sree Vidyanikethan Engineering College, Tirupati | 7.21/10</p>
+        <p>2022 – 2025</p>
+      </div>
+      <div class="education">
+        <h3>Diploma — Electrical & Electronics Engineering</h3>
+        <p>Aries Polytechnic College | 7.5/10</p>
+        <p>2019 – 2022</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p class="section-text">
+        I am interested in entry-level Data Analyst and Business
+        Intelligence opportunities. Feel free to connect with me.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:sharunlucky@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/sharunsatheesh" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/sharunsha" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Sharun Satheesh | Data Analyst Portfolio
+</footer>
+
+</body>
+</html>
